@@ -9,7 +9,7 @@ body {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#222831, #212a3e);
+  background: linear-gradient(#5e4e46, #74685c);
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -28,11 +28,12 @@ body {
 }
 
 #main-header #title img {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 2px solid #00adb5;
+  margin-left: 20px;
+  margin-right: 35px;
 }
 
 #main-header button {
@@ -45,7 +46,7 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   margin: 0;
-  color: #00adb5;
+  color: #fcbe4a;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -95,7 +96,7 @@ h1 {
 .meal-item-price {
   display: inline-block;
   background-color: #312c1d;
-  color: #00adb5;
+  color: #fcbe4a;
   font-size: 0.9rem;
   font-weight: bold;
   padding: 0.5rem 2rem;
@@ -166,7 +167,7 @@ h1 {
   border-radius: 50%;
   border: none;
   background-color: #312c1d;
-  color: #00adb5;
+  color: #fcbe4a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +176,7 @@ h1 {
 .cart-item-actions button:hover,
 .cart-item-actions button:active {
   background-color: #1d1a16;
-  color: #00adb5;
+  color: #fcbe4a;
 }
 
 .control {
@@ -207,8 +208,8 @@ h1 {
 .button {
   font: inherit;
   cursor: pointer;
-  background-color: #00adb5;
-  border: 1px solid #00adb5;
+  background-color: #fcbe4a;
+  border: 1px solid #fcbe4a;
   color: #1f1a09;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
@@ -216,8 +217,8 @@ h1 {
 
 .button:hover,
 .button:active {
-  background-color: #00adb5;
-  border-color: #00adb5;
+  background-color: #fcbe4a;
+  border-color: #fcbe4a;
   color: #1f1a09;
 }
 
@@ -226,12 +227,12 @@ h1 {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  color: #00adb5;
+  color: #fcbe4a;
 }
 
 .text-button:hover,
 .text-button:active {
-  color: #00adb5;
+  color: #fcbe4a;
 }
 
 .modal {
