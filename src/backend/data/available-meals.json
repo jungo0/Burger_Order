@@ -4,69 +4,69 @@
     "name": "싸이버거",
     "price": "4,600원",
     "description": "바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는 맘스터치 시그니처 버거.",
-    "image": "images/thigh.jpg"
+    "image": "images/thigh.png"
   },
   {
     "id": "m2",
     "name": "불싸이버거",
     "price": "4,800원",
     "description": "화끈한 불맛이 살아있는 버거, 싸이버거의 매운맛 버전.",
-    "image": "images/bul.jpg"
+    "image": "images/bul.png"
   },
   {
     "id": "m3",
     "name": "딥치즈버거",
     "price": "5,100원",
     "description": "부드러운 치즈와 한층 더 촉촉해진 통가슴살 패티가 일품인 버거.",
-    "image": "images/deep.jpg"
+    "image": "images/deep.png"
   },
   {
     "id": "m4",
     "name": "인크레더블버거",
     "price": "5,700원",
     "description": "프리미엄 더블햄, 에그프라이, 통다리살 패티에 아삭아삭한 양상추와 양파까지, 풍성한 버거.",
-    "image": "images/incredible.jpg"
+    "image": "images/incredible.png"
   },
   {
     "id": "m5",
     "name": "언빌리버블버거r",
     "price": "5,900원",
     "description": "통새우, 에그프라이, 통가슴살 패티에 매콤한 스리라차 마요 소스를 더한 대확행 버거.",
-    "image": "images/unbelievable.jpg"
+    "image": "images/unbelievable.png"
   },
   {
     "id": "m6",
     "name": "불고기버거",
     "price": "3,900원",
     "description": "영양 만점 불고기 패티에 고소한 불고기 소스를 더해 한층 더 맛있는 버거.",
-    "image": "images/bulgogi.jpg"
+    "image": "images/bulgogi.png"
   },
   {
     "id": "m7",
     "name": "화이트갈릭버거",
     "price": "5,200원",
     "description": "부드러운 화이트 갈릭소스에 프리미엄 더블햄과 통가슴살 패티까지 담은 묵직한 버거.",
-    "image": "images/white.jpg"
+    "image": "images/white.png"
   },
   {
     "id": "m8",
     "name": "칠리새우버거",
     "price": "3,800원",
     "description": "풍미 가득 칠리토마토소스 & 새우살이 쏙쏙 새우패티의 환성적인 만남!시푸드의 풍미를 담은 칠리소스의 감칠맛이 가득한 스페셜 새우버거",
-    "image": "images/chilli.jpg"
+    "image": "images/chilli.png"
   },
   {
     "id": "m9",
     "name": "비프스테이크버거",
     "price": "6,200원",
     "description": "육즙 풍부한 패티와 달콤한 스테이크소스의 조화! 두툼한 육즙 가득 비프패티와 여러가지 토핑 스테이크소스의 환상적인 만남!",
-    "image": "images/chicken-curry.jpg"
+    "image": "images/beef.png"
   },
   {
     "id": "m10",
     "name": "청양마요미트볼버거",
     "price": "6,200원",
     "description": "두툼한 미트볼과 청양마요소스의 만남! 육즙 가득한 미트볼과 치킨패티 그리고 은은한 매콤함의 청양마요소스가 선보이는 환상적인 조화!",
-    "image": "images/mayo.jpg"
+    "image": "images/mayo.png"
   }
 ]
