@@ -3,7 +3,6 @@ import { useContext } from "react";
 import Modal from "./UI/Modal.jsx";
 import CartContext from "../store/CartContext.jsx";
 import Button from "./UI/Button.jsx";
-import { currencyFormatter } from "./util/formatting.js";
 import UserProgressContext from "../store/UserProgressContext.jsx";
 import CartItem from "./CartItem.jsx";
 
@@ -11,10 +10,10 @@ export default function Cart() {
   const cartCtx = useContext(CartContext);
   const userProgressCtx = useContext(UserProgressContext);
 
-  const cartTotal = cartCtx.items.reduce(
-    (totalPrice, item) => totalPrice + item.quantity * item.price,
-    0
-  );
+  const cartTotal = cartCtx.items.reduce((totalPrice, item) => {
+    const itemPrice = parseFloat(item.price.replace(/[^0-9.-]+/g, ""));
+    return totalPrice + item.quantity * itemPrice;
+  }, 0);
 
   function handleCloseCart() {
     userProgressCtx.hideCart();
@@ -22,7 +21,7 @@ export default function Cart() {
 
   return (
     <Modal className="cart" open={userProgressCtx.progress === "cart"}>
-      <h2>Your Cart</h2>
+      <h2>장바구니</h2>
       <ul>
         {cartCtx.items.map((item) => (
           <CartItem
@@ -35,12 +34,12 @@ export default function Cart() {
           />
         ))}
       </ul>
-      <p className="cart-total">{currencyFormatter.format(cartTotal)}</p>
+      <p className="cart-total">{cartTotal} 원</p>
       <p className="modal-actions">
         <Button textOnly onClick={handleCloseCart}>
-          Close
+          닫기
         </Button>
-        <Button onClick={handleCloseCart}>Go to Checkout</Button>
+        <Button onClick={handleCloseCart}>구매하기</Button>
       </p>
     </Modal>
   );

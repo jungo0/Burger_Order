@@ -11,6 +11,7 @@ export default function Modal({ children, open, className = "" }) {
       modal.showModal();
     }
 
+    //clean up opoen변할때 실행
     return () => modal.close();
   }, [open]);
 
