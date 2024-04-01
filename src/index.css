@@ -79,6 +79,7 @@ h1 {
 
 .meal-item img {
   width: 100%;
+  margin-top: 20px;
   height: 22rem;
   object-fit: cover;
 }
