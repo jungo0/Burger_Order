@@ -1,7 +1,5 @@
 import { createContext, useReducer } from "react";
-
 //  const [state, dispatch] = useReducer(reducer, initialState);
-
 const CartContext = createContext({
   items: [],
   addItem: (item) => {},
