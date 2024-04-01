@@ -19,9 +19,28 @@ export default function Checkout() {
     userProgressCtx.hideCheckout();
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const fd = new FormData(event.target);
+    const customerData = Object.fromEntries(fd.entries());
+
+    fetch("http://localhost:3000/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        order: {
+          items: cartCtx.items,
+          customer: customerData,
+        },
+      }),
+    });
+  }
   return (
     <Modal open={userProgressCtx.progress === "checkout"} onClose={handleClose}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>결제</h2>
         <p>총 금액: {cartTotal}</p>
 
