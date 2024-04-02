@@ -42,6 +42,6 @@ export default function useHttp(url, config, initialData) {
     data,
     isLoading,
     error,
-    sendRequest,
+    sendRequest, //이 훅을 사용하는 모든 컴포넌트가 필요할때마다 sendRequest호출
   };
 }

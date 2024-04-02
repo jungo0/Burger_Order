@@ -11,9 +11,11 @@ export default function Meals() {
   } = useHttp("http://localhost:3000/meals", requestConfig, []);
 
   if (isLoading) {
-    return <p>로딩,,,,</p>;
+    return <p className="center">로딩,,,,</p>;
   }
-
+  if (error) {
+    return <Error title="로딩 실패" />;
+  }
   return (
     <ul id="meals">
       {loadedMeals.map((meal) => (
